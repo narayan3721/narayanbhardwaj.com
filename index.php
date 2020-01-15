@@ -17,7 +17,9 @@
     <!--myinfo ends-->
 
     <section class="home-projects">
+        
         <div class="container">
+        <h3>Projects</h3>
             <div class="home-projects__card card">
                 <div class="card-img">
                     <img src="images/thewoodcompany.jpg" alt="images">
