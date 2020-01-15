@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'nb-icon';
+    src:  url('../fonts/nb-icon.eot?d2tsk1');
+    src:  url('../fonts/nb-icon.eot?d2tsk1#iefix') format('embedded-opentype'),
+      url('../fonts/nb-icon/nb-icon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  .icon {
+    font-family: 'nb-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .nb-bars-solid:before {
+    content: "\e900";
+  }
+  

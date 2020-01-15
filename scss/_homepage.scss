@@ -1,0 +1,15 @@
+.myinfo {
+    padding: 1.5rem 0;
+    &__info {
+        margin-top: 1.5rem;
+    }
+    &__content {
+        text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 255px;
+            border-radius: 100%;
+        }
+    }
+}
