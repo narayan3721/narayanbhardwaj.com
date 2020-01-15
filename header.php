@@ -21,7 +21,7 @@
                 <svg width="55" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.03 43.15"><title>logo</title><text transform="translate(-0.16 34.46)" font-size="36" font-family="Lato-Medium, Lato" font-weight="500">N B</text><line x1="31.85" y1="1.9" x2="31.85" y2="39.9" stroke="#ff0" stroke-miterlimit="10" stroke-width="3"/></svg>
             </a>
             <input type="radio" id="navDrawer">
-            <label for="navDrawer" class="header__navmenu">
+            <label for="navDrawer" class="header__navmenu" id="hammenu" onclick="navFixed();">
                 <span class="icon nb-bars-solid"></span> Menu
             </label>
             <div class="layout-drawer">

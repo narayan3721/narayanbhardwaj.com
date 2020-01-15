@@ -46,4 +46,6 @@ $characters = json_decode($data);
     </section>
 </main>
 
+
+
 <?php include("footer.php"); ?>
