@@ -20,6 +20,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .nb-phone-alt-solid:before {
+    content: "\e901";
+  }
+  .nb-code-solid:before {
+    content: "\e902";
+  }
+  .nb-user-circle-regular:before {
+    content: "\e903";
+  }
   .nb-bars-solid:before {
     content: "\e900";
   }
