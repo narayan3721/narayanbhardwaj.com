@@ -2,6 +2,9 @@
     padding: 1.5rem 0;
     &__info {
         margin-top: 1.5rem;
+        h2 {
+            font-size: 1.5rem;
+        }
     }
     &__content {
         text-align: center;
@@ -11,5 +14,15 @@
             max-width: 255px;
             border-radius: 100%;
         }
+    }
+}
+.home-projects {
+    padding: 1.5rem 0;
+    h3 {
+        margin-bottom: 2.5rem;
+    }
+    .container {
+        padding-right: 25px;
+        padding-left: 25px;
     }
 }

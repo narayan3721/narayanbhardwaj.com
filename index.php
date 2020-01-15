@@ -1,5 +1,11 @@
-<?php include("header.php"); ?>
+<?php
 
+$url = 'project.json';
+$data = file_get_contents($url);
+$characters = json_decode($data);
+?>
+
+<?php include("header.php"); ?>
 <main class="content">
     <section class="myinfo">
         <div class="container">
@@ -10,7 +16,7 @@
                 <div class="myinfo__info">
                     <h2>Hi, I am Narayan Bhardwaj. <br>I am a UI Developer.</h2>
                     <p>Have something to say? <span class="link-with-arrow"><a class="pr-4" href="/contacts">Let’s talk<span class="arrow"></span></a></span></p>
-                </div>
+</div>
             </div>
         </div>
     </section>
@@ -19,20 +25,23 @@
     <section class="home-projects">
         
         <div class="container">
-        <h3>Projects</h3>
-            <div class="home-projects__card card">
-                <div class="card-img">
-                    <img src="images/thewoodcompany.jpg" alt="images">
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">The Wood Company</h3>
-                    <p>THE WOOD COMPANY is providing various kind of High Quality Cabinet, Laminated Shutters, PU shutters, membrane shutters both in Matt and Hi-Gloss finishes to their customers</p>
-                    <div class="card-actions">
-                        <a href="http://thewoodcompany.in/" target="_blank">Preview</a>
+        <h3 class="text-center">Projects </h3>
+            <?php foreach ($characters as $character) : ?>
+                <div class="home-projects__card card">
+                    <div class="card-img">
+                        <img src="<?php echo $character->img; ?>" alt="images">
                     </div>
-                </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $character->ProjectTitle; ?></h5>
+                        <p><?php echo $character->ProjectDesc; ?></p>
+                        <div class="card-actions">
+                            <a href="<?php echo $character->ProjectUrl; ?>" target="_blank">Preview</a>
+                        </div>
+                    </div>
 
-            </div>
+                </div>
+            <?php endforeach; ?>
+
         </div>
     </section>
 </main>
