@@ -20,6 +20,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .nb-linkedin-brands:before {
+    content: "\e904";
+  }
+  .nb-facebook-square-brands:before {
+    content: "\e905";
+  }
+  .nb-instagram-brands:before {
+    content: "\e906";
+  }
+  .nb-times-circle-regular:before {
+    content: "\e907";
+  }
   .nb-phone-alt-solid:before {
     content: "\e901";
   }

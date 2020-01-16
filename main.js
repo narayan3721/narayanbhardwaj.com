@@ -1,8 +1,8 @@
     var ovrflw = document.querySelector('body');
     function navFixed(){
-        ovrflw.style.position = "fixed";
-        ovrflw.style.overflow = "hidden";
-        
+        ovrflw.classList.add('ovrflwFixed');       
     }
-
-    console.log('hello');
+    
+    function remFixed(){
+        ovrflw.classList.remove('ovrflwFixed');
+    }

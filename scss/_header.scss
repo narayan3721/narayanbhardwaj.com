@@ -38,17 +38,16 @@
     height: 100%;
     width: 100%;
     z-index: 4;
+    padding: 0 25px;
     &__userprofile {
         background: #ddd url(https://verdict4u.files.wordpress.com/2016/09/14-201.jpg) no-repeat center;
         background-size: cover;
-        color: #fff;
         min-height: 160px;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 0 20px;
+        @extend %flex-with-center;
+        margin: 0 -25px;
         a {
-            color: #fff;
+            @extend %text-white;
         }
         .img {
             width: 64px;
@@ -65,10 +64,11 @@
     }
 }
 
-
-#navDrawer {
+.inpRadio {
     position: absolute;
     display: none;
+}
+#navDrawer {
     &:checked ~ {
         .layout-drawer {
             transform: translateX(0);
@@ -78,26 +78,45 @@
 
 //navbar
 .navbar {
-    display: flex;
-    flex-direction: column;
     padding: 8px 0;
     a {
-        font-size: 16px;
-        padding-left: 25px;
-        height: 48px;
+        font-size: 1.1rem;
+        height: 50px;
         display: flex;
         align-items: center;
         position: relative;
         color: #000;
+        border-bottom: 1px solid #f9f9f9;
         &:first-child .icon {
             font-weight: bold;
         }
     }
     .icon {
-        font-size: 24px;
+        font-size: 25px;
         margin-right: 25px;
-        max-width: 30px;
-        min-width: 30px;
+        width: 30px;
         text-align: center;
     }
+}
+
+.social {
+    margin-top: auto;
+    .social-links {
+        display: flex;
+        list-style: none;
+        font-size: 30px;
+        a {
+            color: #000;
+            margin-right: 20px;
+        }
+    }
+}
+.close-drawer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
 }
