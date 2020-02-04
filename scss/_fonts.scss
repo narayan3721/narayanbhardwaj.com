@@ -20,6 +20,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .nb-chevron-circle-right-solid:before {
+    content: "\e908";
+  }
+  .nb-chevron-circle-left-solid:before {
+    content: "\e909";
+  }
   .nb-linkedin-brands:before {
     content: "\e904";
   }
